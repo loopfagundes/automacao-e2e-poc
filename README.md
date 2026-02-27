@@ -54,23 +54,28 @@ cd automacao-e2e-poc
 ```bash
 npm install
 ```
+### Como utilizar:
 
 ### 2️⃣ Executar os testes
 
 ```bash
 npx cypress run
 ```
+
 Rodar testes (headless)
 
 ```bash
 npm run cy:run
 ```
+
 Rodar em Chrome (recomendado)
+
 ```bash
 npm run cy:run:chrome
 ```
 
 Abrir UI do Cypress
+
 ```bash
 npm run cy:open
 ```
@@ -80,7 +85,7 @@ npm run cy:open
 O relatório será gerado automaticamente em:
 
 ```bash
-/reports/a11y-report.html
+/reports/*report.html
 ```
 
 ### 4️⃣ Opcional: converter para PDF:
@@ -92,6 +97,14 @@ npm i -D puppeteer
 ```
 
 PDF gerar
+
 ```bash
-node scripts/html-to-pdf.js
+npm run report:pdf
+```
+
+### Como utilizar:
+
+Via script (Recomendado): O arquivo package.json, utilize o comando simplificado:
+```bash
+npm run <scripts>
 ```
