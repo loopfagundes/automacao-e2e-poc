@@ -98,7 +98,7 @@
             </h1>
             <div class="summarySection">
             </div>
-            <h2>axe-core found <span class="badge badge-warning">7</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">12</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -130,6 +130,30 @@
                     <tr>
                         <th scope="row"><a href="#3" class="card-link">3</a></th>
                         <td>Form elements must have labels (Teste: Home - não deve ter violações critical&#x2F;serious)</td>
+                        <td>label</td>
+                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                        <td>critical</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#4" class="card-link">4</a></th>
+                        <td>autocomplete attribute must be used correctly (Teste: Busca - não deve ter violações critical&#x2F;serious)</td>
+                        <td>autocomplete-valid</td>
+                        <td>WCAG 2.1 Level AA, WCAG 1.3.5</td>
+                        <td>serious</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#5" class="card-link">5</a></th>
+                        <td>Elements must meet minimum color contrast ratio thresholds (Teste: Busca - não deve ter violações critical&#x2F;serious)</td>
+                        <td>color-contrast</td>
+                        <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                        <td>serious</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="#6" class="card-link">6</a></th>
+                        <td>Form elements must have labels (Teste: Busca - não deve ter violações critical&#x2F;serious)</td>
                         <td>label</td>
                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                         <td>critical</td>
@@ -383,6 +407,301 @@
                     <div class="violationCardLine">
                         <p class="card-title">
                             <a id="3">3.</a> Form elements must have labels (Teste: Home - não deve ter violações critical&#x2F;serious)
+                        </p>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.11&#x2F;label?application&#x3D;axeAPI"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted">label</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level A, WCAG 4.1.2
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensure every form element has a label | URL: https:&#x2F;&#x2F;www.youcom.com.br&#x2F;</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            critical
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.forms </span>
+
+                            <span class="badge bg-light text-dark"> wcag2a </span>
+
+                            <span class="badge bg-light text-dark"> wcag412 </span>
+
+                            <span class="badge bg-light text-dark"> section508 </span>
+
+                            <span class="badge bg-light text-dark"> section508.22.n </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT5.c </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+
+                            <span class="badge bg-light text-dark"> RGAAv4 </span>
+
+                            <span class="badge bg-light text-dark"> RGAA-11.1.1 </span>
+                        </p>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">#policies</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;input id&#x3D;&quot;policies&quot; type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;border-s group-hover...&quot; data-testid&#x3D;&quot;policies&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have an implicit (wrapped) &lt;label&gt;</li>
+                                                <li>  Element does not have an explicit &lt;label&gt;</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                                <li>  Element has no placeholder attribute</li>
+                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <p class="card-title">
+                            <a id="4">4.</a> autocomplete attribute must be used correctly (Teste: Busca - não deve ter violações critical&#x2F;serious)
+                        </p>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.11&#x2F;autocomplete-valid?application&#x3D;axeAPI"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted">autocomplete-valid</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2.1 Level AA, WCAG 1.3.5
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensure the autocomplete attribute is correct and suitable for the form field | URL: https:&#x2F;&#x2F;www.youcom.com.br&#x2F;</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.forms </span>
+
+                            <span class="badge bg-light text-dark"> wcag21aa </span>
+
+                            <span class="badge bg-light text-dark"> wcag135 </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.1.3.5 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+
+                            <span class="badge bg-light text-dark"> RGAAv4 </span>
+
+                            <span class="badge bg-light text-dark"> RGAA-11.13.1 </span>
+                        </p>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.outline-none</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;input class&#x3D;&quot;h-[48px] w-full border-s px-m outline-none rounded-s placeholder:lowercase border-neutrals-4 focus:border-primary-dark&quot; data-testid&#x3D;&quot;input&quot; type&#x3D;&quot;email&quot; autocomplete&#x3D;&quot;«R3ttrenb»&quot; aria-label&#x3D;&quot;email&quot; aria-invalid&#x3D;&quot;false&quot; name&#x3D;&quot;email&quot; value&#x3D;&quot;&quot;&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  the autocomplete attribute is incorrectly formatted</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <p class="card-title">
+                            <a id="5">5.</a> Elements must meet minimum color contrast ratio thresholds (Teste: Busca - não deve ter violações critical&#x2F;serious)
+                        </p>
+                        <a
+                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.11&#x2F;color-contrast?application&#x3D;axeAPI"
+                            target="_blank"
+                            class="card-link violationCardTitleItem learnMore"
+                            >Learn more</a
+                        >
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted">color-contrast</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            WCAG 2 Level AA, WCAG 1.4.3
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-text">Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds | URL: https:&#x2F;&#x2F;www.youcom.com.br&#x2F;</p>
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            serious
+                        </p>
+                    </div>
+                    <div class="violationCardLine">
+                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                            Issue Tags: 
+                            <span class="badge bg-light text-dark"> cat.color </span>
+
+                            <span class="badge bg-light text-dark"> wcag2aa </span>
+
+                            <span class="badge bg-light text-dark"> wcag143 </span>
+
+                            <span class="badge bg-light text-dark"> TTv5 </span>
+
+                            <span class="badge bg-light text-dark"> TT13.c </span>
+
+                            <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                            <span class="badge bg-light text-dark"> EN-9.1.4.3 </span>
+
+                            <span class="badge bg-light text-dark"> ACT </span>
+
+                            <span class="badge bg-light text-dark"> RGAAv4 </span>
+
+                            <span class="badge bg-light text-dark"> RGAA-3.2.1 </span>
+                        </p>
+                    </div>
+                    <div class="violationNode">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 2%">#</th>
+                                    <th style="width: 49%">Issue Description</th>
+                                    <th style="width: 49%">
+                                        To solve this violation, you need to...
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.keen-slider__slide:nth-child(1) &gt; .max-w-\[157px\].m\:max-w-\[160px\].gap-xs &gt; .leading-s.text-\[\#737373\].overflow-hidden</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;p class&#x3D;&quot;overflow-hidden text-xs mt-s leading-s text-center text-[#737373]&quot;&gt;até 5x sem juros&lt;br&gt; *parcela mínima de R$40&lt;&#x2F;p&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.42 (foreground color: #737373, background color: #f7f7f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.m\:py-l</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.keen-slider__slide:nth-child(2) &gt; .max-w-\[157px\].m\:max-w-\[160px\].gap-xs &gt; .leading-s.text-\[\#737373\].overflow-hidden</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;p class&#x3D;&quot;overflow-hidden text-xs mt-s leading-s text-center text-[#737373]&quot;&gt;cupom: PRIMEIRA10&lt;br&gt; *válido no site acima de R$319&lt;&#x2F;p&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.42 (foreground color: #737373, background color: #f7f7f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.m\:py-l</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.keen-slider__slide:nth-child(3) &gt; .max-w-\[157px\].m\:max-w-\[160px\].gap-xs &gt; .leading-s.text-\[\#737373\].overflow-hidden</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;p class&#x3D;&quot;overflow-hidden text-xs mt-s leading-s text-center text-[#737373]&quot;&gt;em algumas regiões, *buscamos na sua casa!&lt;&#x2F;p&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.42 (foreground color: #737373, background color: #f7f7f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.m\:py-l</code></pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card violationCard">
+                <div class="card-body">
+                    <div class="violationCardLine">
+                        <p class="card-title">
+                            <a id="6">6.</a> Form elements must have labels (Teste: Busca - não deve ter violações critical&#x2F;serious)
                         </p>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.11&#x2F;label?application&#x3D;axeAPI"
