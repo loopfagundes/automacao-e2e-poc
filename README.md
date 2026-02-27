@@ -113,10 +113,8 @@ npm run <scripts>
 
 ![Report](reports/assets/img/report.png)
 
-- Report HTML
+- Relatório PDF
 
-[Clique aqui para ver o report HTML](reports/renner-youcom-report.html)
+[Clique aqui para ver o relatório em PDF](reports/renner-youcom-report.pdf)
 
-- Report PDF
-
-[Clique aqui para ver o report PDF](reports/renner-youcom-report.pdf)
+---
