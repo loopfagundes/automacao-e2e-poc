@@ -12,8 +12,7 @@ A proposta é identificar automaticamente violações críticas e sérias de ace
 
 - Node.js
 - Cypress 15.x
-- cypress-axe
-- axe-core (Deque Systems)
+- cypress-axe- axe-core (Deque Systems)
 - axe-html-reporter (geração de relatório HTML)
 
 ---
@@ -29,8 +28,7 @@ A proposta é identificar automaticamente violações críticas e sérias de ace
 Foram analisados os seguintes cenários:
 
 1. Home (não autenticado)
-2. Modal de cadastro
-3. Área autenticada (pós-login)
+2. Buscar um produto
 
 As verificações foram executadas considerando severidades:
 
