@@ -6,6 +6,15 @@ describe('POC Acessibilidade - Renner - youcom', () => {
     checkWithLogs();
   });
 
+  it('Busca - não deve ter violações critical/serious', () => {
+    cy.visit('/');
+    
+    const produto = 'calça jeans';
+    cy.buscaProduto(produto);    
+    
+    checkWithLogs();
+  });
+
   after(() => {
     cy.task('a11yReport');
   });
