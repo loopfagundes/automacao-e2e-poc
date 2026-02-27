@@ -108,3 +108,15 @@ Via script (Recomendado): O arquivo package.json, utilize o comando simplificado
 ```bash
 npm run <scripts>
 ```
+
+### Evidencia:
+
+![Report](reports/assets/img/report.png)
+
+- Report HTML
+
+[Clique aqui para ver o report HTML](reports/renner-youcom-report.html)
+
+- Report PDF
+
+[Clique aqui para ver o report PDF](reports/renner-youcom-report.pdf)
